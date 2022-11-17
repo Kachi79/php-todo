@@ -58,7 +58,7 @@ stage('Plot Code Coverage Report') {
 
   stage('SonarQube Quality Gate') {
         environment {
-            scannerHome = tool 'SonarQubeScanner'
+            scannerHome = tool 'Sonarqubescanner'
         }
         steps {
             withSonarQubeEnv('sonarqube') {
